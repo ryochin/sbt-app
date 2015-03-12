@@ -8,7 +8,6 @@ Usage
 
 	brew install giter8    # on OSX
 	g8 ryochin/sbt-app
-	cd sbt-app
-	mv dot.gitignore .gitignore
+	cd my-first-app
 	sbt run
 
