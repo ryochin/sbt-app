@@ -13,4 +13,4 @@ javaOptions += "-Xmx2G"
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked", "-Xlint")
 scalacOptions ++= Seq("-Ywarn-dead-code", "-Ywarn-numeric-widen", "-Ywarn-unused", "-Ywarn-unused-import", "-Ywarn-value-discard")
 
-// libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.10"
+libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.4" % "test"
