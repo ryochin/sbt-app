@@ -14,4 +14,7 @@ scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked", "-Xlint")
 
 scalacOptions ++= Seq("-Ywarn-dead-code", "-Ywarn-numeric-widen", "-Ywarn-unused", "-Ywarn-unused-import", "-Ywarn-value-discard")
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.4" % "test"
+libraryDependencies ++= Seq(
+//  "org.scala-lang.modules" %% "scala-xml" % "1.0.3",
+  "org.scalatest" %% "scalatest" % "2.2.4" % "test"
+)
