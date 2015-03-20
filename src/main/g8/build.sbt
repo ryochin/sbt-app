@@ -6,6 +6,10 @@ organization := "org.myproject"
 
 scalaVersion := "2.11.6"
 
+// mainClass in Compile := Some("Main")
+
+assemblyJarName in assembly := "$name$-" + version.value + ".jar"
+
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
 javaOptions += "-Xmx2G"
