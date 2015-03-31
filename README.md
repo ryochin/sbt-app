@@ -33,5 +33,10 @@ Usage
 	sbt test
 	sbt run
 
+	curl -L -o .gitignore https://github.com/github/gitignore/raw/master/Scala.gitignore
+	git init
+	git add .
+	git commit -m "initial import."
+
 	sbt assembly
 	java -classpath target/scala-2.11/my-app-0.1.jar Main
