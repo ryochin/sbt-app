@@ -1,8 +1,14 @@
-run:
-	sbt 'run-main Main'
+MAIN_CLASS = Main
+MAIN_ARGS = -v
+VERSION = 0.1
 
-run-java: assembly
-	java -cp target/scala-2.11/$name$-0.1.jar -client -ea -Xms1g -Xmx1g Main
+run:
+	sbt 'run-main \$(MAIN_CLASS) \$(MAIN_ARGS)'
+
+run-java: assembly run-java-command
+
+run-java-command:
+	java -cp target/scala-2.11/$name$-\$(VERSION).jar -client -ea -Xms1g -Xmx1g \$(MAIN_CLASS) \$(MAIN_ARGS)
 
 compile:
 	sbt compile
