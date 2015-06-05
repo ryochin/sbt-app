@@ -12,7 +12,7 @@ assemblyJarName in assembly := "$name$-" + version.value + ".jar"
 
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
-javaOptions += "-Xmx2G"
+javaOptions += "-Xmx2G -XX:+CMSClassUnloadingEnabled -XX:MaxMetaspaceSize=512M"
 
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked", "-Xlint")
 

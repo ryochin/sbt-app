@@ -18,3 +18,6 @@ test:
 
 assembly:
 	sbt assembly
+
+doc:
+	sbt doc && open target/scala-2.11/api/index.html
