@@ -6,7 +6,7 @@ A simple but complete "Hello World Starter Kit" for Scala 2.11.
 * appropriate options
 * auto formatting
 * scalatest
-* assembly
+* native-packager
 
 Setup Java
 ----------
@@ -38,5 +38,14 @@ Usage
 	git add .
 	git commit -m "initial import."
 
-	sbt assembly
-	java -classpath target/scala-2.11/my-app-0.1.jar Main
+	sbt stage
+	target/universal/stage/bin/my-app -main Main
+
+### by Makefile
+
+	make compile
+	make test
+	make run
+	make run-app            # stage and run
+	make run-app-command    # run only
+	make doc                 # open html

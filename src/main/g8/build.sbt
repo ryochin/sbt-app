@@ -6,9 +6,7 @@ organization := "org.myproject"
 
 scalaVersion := "2.11.6"
 
-mainClass in (Compile, assembly) := Some("Main")
-
-assemblyJarName in assembly := "$name$-" + version.value + ".jar"
+mainClass in Compile := Some("Main")
 
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
@@ -36,3 +34,5 @@ libraryDependencies ++= Seq(
 //   "org.scalacheck" %% "scalacheck" % "1.12.2" % "test",
 //   "org.scalamock" %% "scalamock-scalatest-support" % "3.2" % "test"
 // )
+
+enablePlugins(JavaAppPackaging)
