@@ -7,6 +7,8 @@ A simple but complete "Hello World Starter Kit" for Scala 2.11.
 * auto formatting
 * scalatest
 * native-packager
+* typesafe-config
+* scala-logging
 
 Setup Java
 ----------

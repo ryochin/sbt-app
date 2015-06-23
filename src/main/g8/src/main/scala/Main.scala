@@ -1,5 +1,14 @@
-object Main {
+import scala.collection.mutable
+import scala.language.postfixOps
+
+import com.typesafe.config.{ Config, ConfigFactory }
+import com.typesafe.scalalogging.StrictLogging
+
+object Main extends StrictLogging {
+  val config = ConfigFactory.load
+
   def main(args: Array[String]): Unit = {
-    println("Hello World")
+    val message = config.getString("app.message")
+    logger.info(message)
   }
 }
