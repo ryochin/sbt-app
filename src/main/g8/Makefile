@@ -21,5 +21,8 @@ test:
 stage:
 	sbt stage
 
+claen:
+	rm -rf target project/target project/project
+
 doc:
 	sbt doc && open target/scala-2.11/api/index.html
