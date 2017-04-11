@@ -1,10 +1,13 @@
-import org.scalatest.FunSpec
-import org.scalatest.Matchers._
+import org.specs2._
 
-class MainSpec extends FunSpec {
-  describe("first test") {
-    it("contains string hello") {
-      "hello world" should include("hello")
-    }
-  }
+class MainSpec extends Specification {
+  def is = s2"""
+
+  main() tests
+
+  hello
+    contains string hello        \$p1
+  """
+
+  def p1 = "hello world".matches("hello.+")
 }
