@@ -5,7 +5,7 @@ VERSION = 0.1
 JAVA_OPTS = -client -ea -Xms1g -Xmx1g
 
 run:
-	sbt 'run-main \$(MAIN_CLASS) \$(MAIN_ARGS)'
+	sbt 'runMain \$(MAIN_CLASS) \$(MAIN_ARGS)'
 
 run-app: stage run-app-command
 
@@ -21,7 +21,7 @@ test:
 stage:
 	sbt stage
 
-claen:
+clean:
 	rm -rf target project/target project/project
 
 doc:

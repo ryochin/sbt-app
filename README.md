@@ -1,7 +1,7 @@
 README
 ======
 
-A simple but complete "Hello World Starter Kit" for Scala 2.11.
+A simple but complete "Hello World Starter Kit" for Scala 2.12.
 
 * appropriate options
 * auto formatting
@@ -21,12 +21,11 @@ Setup Scala
 ### OSX
 
 	brew install scala sbt
-	brew install giter8
 
 Usage
 -----
 
-	g8 ryochin/sbt-app
+	sbt new ryochin/sbt-app.g8
 	cd my-app
 
 	vi src/main/scala/Main.scala
@@ -50,4 +49,4 @@ Usage
 	make run
 	make run-app            # stage and run
 	make run-app-command    # run only
-	make doc                 # open html
+	make doc                # open html

@@ -1,22 +1,19 @@
 import scalariform.formatter.preferences._
-import ScalariformKeys._
 
-scalariformSettings
-
-preferences := preferences.value
+scalariformPreferences := scalariformPreferences.value
   .setPreference(AlignParameters, true)
   .setPreference(AlignSingleLineCaseStatements, true)
   .setPreference(AlignSingleLineCaseStatements.MaxArrowIndent, 40)
   .setPreference(CompactControlReadability, false)
   .setPreference(CompactStringConcatenation, false)
-  .setPreference(DoubleIndentClassDeclaration, true)
+  .setPreference(DoubleIndentConstructorArguments, true)
   .setPreference(FormatXml, true)
   .setPreference(IndentLocalDefs, false)
   .setPreference(IndentPackageBlocks, true)
   .setPreference(IndentSpaces, 2)
   .setPreference(IndentWithTabs, false)
   .setPreference(MultilineScaladocCommentsStartOnFirstLine, false)
-  .setPreference(PreserveDanglingCloseParenthesis, true)
+  .setPreference(DanglingCloseParenthesis, Preserve)
   .setPreference(PlaceScaladocAsterisksBeneathSecondAsterisk, false)
   .setPreference(PreserveSpaceBeforeArguments, false)
   .setPreference(RewriteArrowSymbols, false)
@@ -24,4 +21,3 @@ preferences := preferences.value
   .setPreference(SpaceInsideBrackets, false)
   .setPreference(SpaceInsideParentheses, false)
   .setPreference(SpacesWithinPatternBinders, true)
-
